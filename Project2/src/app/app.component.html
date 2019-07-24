@@ -1,0 +1,20 @@
+<style>
+  .navbar {
+    background: rgba(0,0,0,0.5);
+  }
+</style>
+<!--     NAVBAR     -->
+<nav class="navbar navbar-expand-sm navbar-dark">
+  <a href="app.component.html" class="navbar-brand  my-5 mr-3 ml-3">RevPost</a>
+  <div class="collapse navbar-collapse" routerLinkActive="active">
+    <ul class="navbar-nav mr-auto"></ul>
+    <form class="form">
+      <input class="form-control mr-sm-2 my-2" type="text" placeholder="Username" aria-label="Search">
+      <input class="form-control mr-sm-2 my-2" type="password" placeholder="Password" aria-label="Search">
+      <button class="btn btn-primary" type="submit">Login</button>
+      <button class="btn btn-info ml-4" type="button" routerLink="Login">Recover Password</button>
+    </form>
+    <button class="btn btn-info ml-5 mr-3" routerLink="register">Register</button>
+  </div>
+</nav>
+<router-outlet></router-outlet>
